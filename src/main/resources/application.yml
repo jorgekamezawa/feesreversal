@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/estudos?currentSchema=reversao'
+    username: postgres
+    password: changeme123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+aws:
+  s3:
+    bucket:
+      name: accrualfees-anexo
